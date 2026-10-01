@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3faff;
+            color: #101d3b;
+        }
+
+        .navbar {
+            background-color:rgba(18, 101, 163, 0.5);
+            padding: 15px 50px;
+        }
+
+        .navbar-brand img {
+            height: 70px;
+        }
+
+        .nav-link {
+            color: white;
+            font-weight: 500;
+            margin-left: 20px;
+        }
+
+        .nav-link:hover {
+            color: #62d9f5;
+        }
+
+        .main {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            background-image: url('media/main-bg.jpeg');
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        .intro {
+            max-width: 550px;
+        }
+
+        .hello {
+            font-size: 20px;
+            color: #299bc7;
+        }
+
+        .intro h1 {
+            font-size: 65px;
+            font-weight: bold;
+            color: #101d3b;
+            margin: 0;
+        }
+
+        .student {
+            font-size: 22px;
+            color: #52708f;
+            margin-top: 10px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .download {
+            background-color: #1265a3;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 25px;
+            margin-right: 10px;
+        }
+
+        .download:hover {
+            background-color: #0b4f84;
+        }
+
+        .video {
+            background-color: white;
+            color: #1265a3;
+            padding: 10px 25px;
+            border-radius: 10px;
+        }
+
+        .video:hover {
+            background-color: #d5f5ff;
+        }
+
+        .my-image {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            padding: 7px;
+            border-radius: 50%;
+        }
+
+        .about {
+            background-color: rgba(18, 101, 163, 0.5);
+            padding: 70px 10%;
+        }
+
+        .about h2 {
+            font-size: 40px;
+            color: #123c78;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .about > p {
+            max-width: 700px;
+            margin: 20px auto 40px;
+            text-align: center;
+        }
+
+        .subjects {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .subject {
+            margin-bottom: 25px;
+        }
+
+        .subject-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            color: #123c78;
+            font-weight: bold;
+        }
+
+        .subject-name i {
+            margin-right: 8px;
+        }
+
+        .bar {
+            width: 100%;
+            height: 15px;
+            background-color: #dbefff;
+        }
+
+        .blue {
+            height: 15px;
+        }
+
+        .english {
+            width: 90%;
+            background-color: #1e73be;
+        }
+
+        .global {
+            width: 85%;
+            background-color: #298dcc;
+        }
+
+        .ict {
+            width: 95%;
+            background-color: #1769aa;
+        }
+
+        .science {
+            width: 88%;
+            background-color: #4db8e8;
+        }
+
+        @media (max-width: 768px) {
+
+            .main {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .intro h1 {
+                font-size: 50px;
+            }
+
+            .my-image {
+                width: 220px;
+                height: 220px;
+            }
+
+            .navbar {
+                padding: 15px 20px;
+            }
+
+            .nav-link {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="media/portfolio-logo.png">
+            </a>
+
+            <div class="navbar-nav ms-auto">
+
+                <a class="nav-link" href="#">English</a>
+
+                <a class="nav-link" href="#">
+                    Global Perspective
+                </a>
+
+                <a class="nav-link" href="#">
+                    ICT
+                </a>
+
+                <a class="nav-link" href="#">
+                    Science
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <div class="main">
+        <div class="intro">
+
+            <p class="hello">
+                Greetings, my name is
+            </p>
+
+            <h1>
+                Ms. <span>Sol</span>
+            </h1>
+
+            <p class="student">
+                Year 9 Student
+            </p>
+
+            <div class="buttons">
+
+                <button class="download">
+                    Download CV
+                </button>
+
+                <button class="video">
+                    Play Video
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <img src="media/tom.jpg"
+                class="my-image"
+                alt="My photo">
+
+        </div>
+
+    </div>
+
+
+    <div class="about">
+
+        <h2>
+            My Subjects
+        </h2>
+
+        <p>
+            These are some of the subjects I enjoy and the skills
+            that I have developed from my studies and projects like PBL.
+        </p>
+
+
+        <div class="subjects">
+
+
+            <div class="subject">
+
+                <div class="subject-name">
+
+                    <span>
+                        <i class="bi bi-book"></i>
+                        English
+                    </span>
+
+                    <span>
+                        90%
+                    </span>
+
+                </div>
+
+                <div class="bar">
+                    <div class="blue english"></div>
+                </div>
+
+            </div>
+
+
+            <div class="subject">
+
+                <div class="subject-name">
+
+                    <span>
+                        <i class="bi bi-globe-asia-australia"></i>
+                        Global Perspective
+                    </span>
+
+                    <span>
+                        85%
+                    </span>
+
+                </div>
+
+                <div class="bar">
+                    <div class="blue global"></div>
+                </div>
+
+            </div>
+
+
+            <div class="subject">
+
+                <div class="subject-name">
+
+                    <span>
+                        <i class="bi bi-code-slash"></i>
+                        ICT
+                    </span>
+
+                    <span>
+                        95%
+                    </span>
+
+                </div>
+
+                <div class="bar">
+                    <div class="blue ict"></div>
+                </div>
+
+            </div>
+
+
+            <div class="subject">
+
+                <div class="subject-name">
+
+                    <span>
+                        <i class="bi bi-flask"></i>
+                        Science
+                    </span>
+
+                    <span>
+                        88%
+                    </span>
+
+                </div>
+
+                <div class="bar">
+                    <div class="blue science"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
